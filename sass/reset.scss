@@ -1,0 +1,83 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,figure {margin: 0;padding: 0;box-sizing: border-box;}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+body,
+html,
+th,
+td,
+input,
+select,
+textarea,
+button {/* 重置页面文字属性 */
+    font:14px "Raleway","晴圆等宽","微软雅黑","Arial Narrow",HELVETICA;background:#fff;
+    -webkit-text-size-adjust:100%;
+}
+i, 
+b, 
+em, 
+strong, 
+address, 
+caption{/* 取消默认的加粗样式 */
+    font-style: normal;
+    font-weight: normal;
+}
+img,
+fieldset{/*针对IEa标签嵌套img出现边框及图片底部缝隙*/
+    border:0;
+    vertical-align:middle;
+} 
+dl,
+ul,
+ol,
+menu,
+li {/* 重置类表前导符号为onne,menu在HTML5中有效 */
+    list-style: none;
+}
+input,
+select,
+textarea,
+button {/* 重置表单控件垂直居中*/
+    vertical-align: middle
+}
+button {/* 重置表单button按钮效果 */
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+a {/* 重置链接a标签 */
+    color: #333;
+    text-decoration: none
+}
+a:active,
+a:hover {/* 重置链接a标签的鼠标滑动效果 */
+    text-decoration: none
+}
+input,
+textarea,
+select,
+button {/*表单样式重置*/
+    border: none;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {/* 取消默认的选中焦点框样式 */
+    outline: none;
+    outline-offset: 0;
+}
+
+.clearfix:after {/* 清楚浮动 */
+    content: "."; 
+    display: block; 
+    height:0; 
+    clear:both; 
+    visibility: hidden;
+}
+.clearfix { *zoom:1; }
+
+
+

@@ -1,6 +1,193 @@
-$w:400px;
-header{
-  width: $w;
-  height: 300px;
-  background-color: pink;
+@mixin con {
+  width: 1090px;
+  margin: 0 auto;
+}
+
+.top_navBox {
+  background-color: #333;
+}
+
+.top_nav {
+  @include con;
+	height: 36px;
+	font-size: 12px;
+}
+
+.t_n_left {
+  float: left;
+  em {
+    height: 100%;
+	}
+	
+  a {
+    margin-left: 26px;
+    line-height: 36px;
+    color: #CC9756;
+		text-decoration: underline;
+		&:hover{
+			color: #fff;
+		}
+  }
+}
+
+.t_n_right{
+	float: right;
+	li{
+		float: left;
+		margin-left: 10px;
+		position: relative;
+
+		&:hover>a,&:hover>button{
+			color: #fff;
+		}
+
+		&:hover>div{
+			display: block;
+		}
+
+		button{//登陆注册
+			line-height: 36px;
+			color: #ccc;
+			font-size: 12px;
+		}
+
+		div{//伸缩盒
+			display: none;
+			width: 83px;
+			border: 1px solid #ddd;
+			background: #fff;
+			padding: 3px 0;
+			box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+			position: absolute;
+			top: 36px;
+			left: 0;
+
+			a{
+				display: block;
+				margin: 0 13px;
+				color: #999;
+				text-align: center;
+				white-space: nowrap;
+
+				&::before{//上划线
+					content: '';
+					display: inline-block;
+					position: absolute;
+					left: 12px;
+					height: 1px;
+					width: 70%;
+					border-top: 1px solid #ddd;
+				}
+
+				&:hover{
+					color: #CC9756;
+				}
+			}
+
+			.topJ::before{//上三角
+				content: '';
+				display: block;
+				position: absolute;
+				top: -10px;
+				left: 36px;
+				width: 0;
+				height: 0;
+				border-top: 5px solid #0000;
+				border-bottom: 5px solid #fff;
+				border-left: 5px solid #0000;
+				border-right: 5px solid #0000;
+			}
+		}
+
+		a{
+			line-height: 36px;
+			color: #ccc;
+			// transition: all 0.5s;
+		}
+
+		&>a::before{//左划线
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 16px;
+			border-left: 1px solid #5c5c5c;
+			vertical-align: middle;
+		}
+	}
+}
+
+.main_nav{
+	@include con;
+	height: 140px;
+	padding-top: 26px;
+	position: relative;
+
+	.logo{
+		text-indent: -9999px;
+		float: left;
+
+		a{
+			display: block;
+			height: 60px;
+			width: 212px;
+			background: url(../img/icon-yxtop-s2904006215-b2811ec0e9.webp) no-repeat 0 -298px;
+		}
+	}
+
+	.shop{//购物车
+		float: right;
+    width: 134px;
+    height: 38px;
+    border: 1px solid #CC9756;
+    border-radius: 19px;
+		text-align: center;
+		line-height: 38px;
+
+		a{
+			color: #CC9756;
+			position: relative;
+
+			i{//购物车数字
+				color: #fff;
+				position: absolute;
+				width: 18px;
+				height: 20px;
+				line-height: 20px;
+				top: -3px;
+				right: -25px;
+				background: #D32C2E;
+				border-radius: 50%;
+				display: block;
+			}
+		}
+	}
+
+.search{
+	input{
+		width: 442px;
+		height: 38px;
+		border-radius: 38px 0 0 38px;
+		border: 1px solid #CC9756;
+	}
+	button{
+		width: 90px;
+		height: 38px;
+		border-radius: 0 38px 38px 0;
+		border: 1px solid #CC9756;
+	}
+}
+
+	.nav{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		ul{
+			li{
+				float: left;
+				margin-top: 27px;
+				padding: 0 26px;
+			}
+		}
+	}
 }

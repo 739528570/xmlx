@@ -33,7 +33,7 @@ task('html', async ()=>{
 // 编译sass
 task('sass', async ()=>{
   src('./sass/*.scss')
-  .pipe(load.sassChina()) // 把sass转成css
+  .pipe(load.sass()) // 把sass转成css
   .pipe(dest('./dist/css'))
   .pipe(load.connect.reload())
 })
