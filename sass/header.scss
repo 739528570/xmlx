@@ -9,185 +9,308 @@
 
 .top_nav {
   @include con;
-	height: 36px;
-	font-size: 12px;
+  height: 36px;
+  font-size: 12px;
 }
 
 .t_n_left {
   float: left;
+
   em {
     height: 100%;
-	}
-	
+  }
+
   a {
     margin-left: 26px;
     line-height: 36px;
     color: #CC9756;
-		text-decoration: underline;
-		&:hover{
-			color: #fff;
-		}
+    text-decoration: underline;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
-.t_n_right{
-	float: right;
-	li{
-		float: left;
-		margin-left: 10px;
-		position: relative;
+.t_n_right {
+  float: right;
 
-		&:hover>a,&:hover>button{
-			color: #fff;
-		}
+  li {
+    float: left;
+    margin-left: 10px;
+    position: relative;
 
-		&:hover>div{
-			display: block;
-		}
+    &:hover>a,
+    &:hover>button {
+      color: #fff;
+    }
 
-		button{//登陆注册
-			line-height: 36px;
-			color: #ccc;
-			font-size: 12px;
-		}
+    &:hover>div {
+      display: block;
+    }
 
-		div{//伸缩盒
-			display: none;
-			width: 83px;
-			border: 1px solid #ddd;
-			background: #fff;
-			padding: 3px 0;
-			box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
-			position: absolute;
-			top: 36px;
-			left: 0;
+    button {
+      //登陆注册
+      line-height: 36px;
+      color: #ccc;
+      font-size: 12px;
+    }
 
-			a{
-				display: block;
-				margin: 0 13px;
-				color: #999;
-				text-align: center;
-				white-space: nowrap;
+    div {
+      //伸缩盒
+      display: none;
+      width: 83px;
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 3px 0;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+      position: absolute;
+      top: 36px;
+      left: 0;
+      z-index: 9;
 
-				&::before{//上划线
-					content: '';
-					display: inline-block;
-					position: absolute;
-					left: 12px;
-					height: 1px;
-					width: 70%;
-					border-top: 1px solid #ddd;
-				}
+      a {
+        display: block;
+        margin: 0 13px;
+        color: #999;
+        text-align: center;
+        white-space: nowrap;
 
-				&:hover{
-					color: #CC9756;
-				}
-			}
+        &::before {
+          //上划线
+          content: '';
+          display: inline-block;
+          position: absolute;
+          left: 12px;
+          height: 1px;
+          width: 70%;
+          border-top: 1px solid #ddd;
+        }
 
-			.topJ::before{//上三角
-				content: '';
-				display: block;
-				position: absolute;
-				top: -10px;
-				left: 36px;
-				width: 0;
-				height: 0;
-				border-top: 5px solid #0000;
-				border-bottom: 5px solid #fff;
-				border-left: 5px solid #0000;
-				border-right: 5px solid #0000;
-			}
-		}
+        &:hover {
+          color: #CC9756;
+        }
+      }
 
-		a{
-			line-height: 36px;
-			color: #ccc;
-			// transition: all 0.5s;
-		}
+      .topJ::before {
+        //上三角
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid #0000;
+        border-bottom: 5px solid #fff;
+        border-left: 5px solid #0000;
+        border-right: 5px solid #0000;
+      }
+    }
 
-		&>a::before{//左划线
-			content: '';
-			display: inline-block;
-			width: 10px;
-			height: 16px;
-			border-left: 1px solid #5c5c5c;
-			vertical-align: middle;
-		}
-	}
+    a {
+      line-height: 36px;
+      color: #ccc;
+      // transition: all 0.5s;
+    }
+
+    &>a::before {
+      //左划线
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      border-left: 1px solid #5c5c5c;
+      vertical-align: middle;
+    }
+  }
 }
 
-.main_nav{
-	@include con;
-	height: 140px;
-	padding-top: 26px;
-	position: relative;
+.main_navBox{
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+}
 
-	.logo{
-		text-indent: -9999px;
-		float: left;
+.main_nav {
+  @include con;
+  height: 140px;
+  padding-top: 26px;
+  position: relative;
 
-		a{
-			display: block;
-			height: 60px;
-			width: 212px;
-			background: url(../img/icon-yxtop-s2904006215-b2811ec0e9.webp) no-repeat 0 -298px;
-		}
-	}
+  .logo {
+    text-indent: -9999px;
+    float: left;
 
-	.shop{//购物车
-		float: right;
+    a {
+      display: block;
+      height: 60px;
+      width: 212px;
+			background: url(../img/icon-yxtop-s2904006215-b2811ec0e9.webp) no-repeat 0 -302px;
+    }
+  }
+
+  .shop {//购物车
+    float: right;
     width: 134px;
     height: 38px;
     border: 1px solid #CC9756;
     border-radius: 19px;
-		text-align: center;
-		line-height: 38px;
+    text-align: center;
+    line-height: 38px;
 
-		a{
-			color: #CC9756;
+    a {
+			display: block;
+      color: #CC9756;
+      position: relative;
+
+      i {
+        //购物车数字
+        color: #fff;
+        position: absolute;
+        width: 18px;
+        height: 20px;
+        line-height: 20px;
+        top: 8px;
+        right: 18px;
+        background: #D32C2E;
+        border-radius: 50%;
+        display: block;
+      }
+		}
+		
+		&:hover{
+			background: #CC975618;
+		}
+  }
+
+  .search {//搜索框
+    position: relative;
+    margin-left: 130px;
+    float: left;
+    width: 536px;
+
+    input {
+      width: 442px;
+			height: 38px;
+			font-size: 14px;
+			line-height: 38px;
+      border-radius: 38px 0 0 38px;
+      border: 1px solid #CC9756;
+			float: left;
+			padding: 2px 0 2px 38px;
+
+			
+    }
+
+    button {
+      width: 90px;
+      height: 38px;
+      font-size: 16px;
+      color: #fff;
+      background: #CC9756;
+      border-radius: 0 38px 38px 0;
+      border: 1px solid #CC9756;
+			float: left;
+			
+			&:hover{
+				opacity: 0.7;
+			}
+    }
+
+    p {
+      margin: 42px 0 3px 15px;
+
+      a {
+        color: #CC9756;
+        font-size: 12px;
+        padding-right: 10px;
+        border-right: 1px solid #ccc;
+
+        &:last-child {//取消右划线
+          border: none;
+        }
+      }
+    }
+  }
+
+  .nav {//导航栏
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    ul {
 			position: relative;
 
-			i{//购物车数字
-				color: #fff;
-				position: absolute;
-				width: 18px;
-				height: 20px;
-				line-height: 20px;
-				top: -3px;
-				right: -25px;
-				background: #D32C2E;
-				border-radius: 50%;
-				display: block;
-			}
-		}
-	}
-
-.search{
-	input{
-		width: 442px;
-		height: 38px;
-		border-radius: 38px 0 0 38px;
-		border: 1px solid #CC9756;
-	}
-	button{
-		width: 90px;
-		height: 38px;
-		border-radius: 0 38px 38px 0;
-		border: 1px solid #CC9756;
-	}
-}
-
-	.nav{
-		position: absolute;
-		left: 0;
-		bottom: 0;
-
-		ul{
-			li{
-				float: left;
-				margin-top: 27px;
+      li {
+        float: left;
+        margin-top: 27px;
 				padding: 0 26px;
-			}
-		}
-	}
+				
+
+        a {
+          font-weight: 900;
+          color: #000;
+          display: block;
+          padding-bottom: 5px;
+          border-bottom: 3px solid #0000;
+				}
+
+        &:hover>a ,.xz{//选中效果
+          color: #cc9756;
+          border-bottom: 3px solid #cc9756;
+        }
+
+        &:first-child,
+        &:last-child {
+          padding: 0;
+				}
+				
+				.nav_list{
+					min-width: 166px;
+					padding: 14px 20px 20px;
+					border: 1px solid rgba(0,0,0,.1);
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					display: none;
+
+					dl{
+						float: left;
+						min-width: 124px;
+						max-height: 445px;
+						margin-right: 24px;
+
+						dt{
+							margin-bottom: 10px;
+							font-size: 16px;
+							font-weight: 700;
+							line-height: 36px;
+							border-bottom: 1px solid #ddd;
+						}
+						
+						.nav_subList{
+							div{
+								float: left;
+
+								dd{
+									width: 124px;
+		
+									img{
+										width: 50px;
+										height: 50px;
+									}
+								}
+							}
+						}
+						
+
+						&:last-child{
+							margin: 0;
+						}
+					}
+
+					
+				}
+      }
+    }
+  }
 }
