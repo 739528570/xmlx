@@ -1,0 +1,405 @@
+@mixin con {
+  width: 1090px;
+  margin: 0 auto;
+}
+
+.banner {//****************广告
+	height: 420px;
+	overflow: hidden;
+	position: relative;
+	background: #f5f5f5;
+
+	div{
+		width: 1349px;
+		position: relative;
+
+		a{
+			display: block;
+			height: 420px;
+			position: absolute;
+			left: 50%;
+	
+			img{
+				position: relative;
+				left: -50%;
+				height: 420px;
+			}
+		}
+	}
+}
+
+.new {//*******************新品区
+	height: 410px;
+	@include con;
+	margin-top: 30px;
+
+	.new_top{//***************头部
+		margin-bottom: 20px;
+
+		div:first-child{
+			float: left;
+
+			h2{
+				font-size: 28px;
+				font-weight: 900;
+				line-height: 1;
+				float: left;
+				margin-right: 20px;
+
+				&:hover{
+					color: #b4a078;
+				}
+			}
+
+			span{
+				padding-top: 13px;
+    		display: inline-block;
+    		line-height: 1;
+			}
+		}
+		span:last-child{
+			float: right;
+			
+			a{
+				display: inline-block;
+				line-height: 1;
+				margin-left: 30px;
+				padding-top: 14px;
+
+				&:hover{
+					color: #b4a078;
+				}
+			}
+		}
+	}
+
+	.new_con{//**************内容
+
+		div{
+			position: relative;
+
+			.new_list{
+				position: relative;
+				overflow: hidden;
+	
+				ul{
+					width: 8000px;
+					position: relative;
+					top: 0;
+					left: 0;
+					display: block;
+	
+					li{
+						width: 265px;
+						margin-right: 10px;
+						float: left;
+						height: 100%;
+						min-height: 1px;
+
+						
+	
+						.hd{//***************图片
+							position: relative;
+							margin-bottom: 8px;
+							overflow: hidden;
+	
+							a{
+								display: block;
+		
+								div:nth-of-type(2){//隐藏图
+									display: none;
+								}
+							}
+						}
+	
+						.bd{
+							text-align: center;
+	
+							.prdtTags{
+								height: 20px;
+								font-size: 0;
+								color: #fff;
+								width: 200px;
+								margin: 0 auto 3px;
+								overflow: hidden;
+	
+								span{
+									height: 20px;
+									line-height: 20px;
+									font-size: 12px;
+									display: inline-block;
+									color: #fff!important;
+									padding: 0 5px;
+									background-color: #e36844;
+								}
+							}
+	
+							.name{//**********描述
+								width: 166px;
+								margin: 0 auto 4px;
+								max-height: 40px;
+								line-height: 20px;
+								// display: -webkit-box;
+								overflow: hidden;
+								text-align: center;
+	
+								a{
+									text-align: center;
+								}
+							}
+	
+							.price{//**********价格
+								font-size: 13px;
+								line-height: 13px;
+								color: #d4282d;
+								padding: 1px 0 9px;
+								margin: 0;
+								padding: 1px 0 9px;
+
+								.counterPrice{
+									font-size: 12px;
+									color: #999;
+    							text-decoration: line-through;
+								}
+							}
+						}
+					}
+
+					li:hover .hd a div:nth-of-type(1){
+						display: none;
+					}
+					li:hover .hd a div:nth-of-type(2){
+						display: block;
+					}
+				}
+			}
+	
+			button{//***************按钮
+				position: absolute;
+				color: #fff;
+				z-index: 9;
+				top: 150px!important;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+				opacity: 80;
+				background-color: #E2C199;
+			}
+
+			.btn_prve{
+				left: -60px;
+			}
+			
+			.btn_next{
+				right: -60px;
+			}
+		}
+	}
+}
+
+.recommend{//**************人气推荐
+	height: 738px;
+	padding: 60px 0;
+	background: #f4f0ea;
+	&>div{
+		@include con;
+	}
+
+	div{
+
+		.rec_top{//***************头部
+			margin-bottom: 20px;
+
+			div{
+				float: left;
+
+				a{
+					float:left;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 1;
+					float: left;
+					margin-right: 20px;
+
+					&:hover{
+						color: #b4a078;
+					}
+				}
+
+
+				div{//****************选项卡选项
+					overflow: hidden;
+					padding-left: 13px;
+					float: left;
+
+					button{
+						text-align: center;
+						float: left;
+						font-size: 14px;
+						width: 70px;
+						height: 28px;
+						line-height: 28px;
+						margin-right: 55px;
+
+						&:hover{
+							color: #b4a078;
+						}
+					}
+
+					.on{//******************选中
+						color: #b4a078;
+						border-bottom: 2px solid #b4a078;
+					}
+				}
+			}
+
+			span{
+				float: right;
+
+				a:hover{
+					color: #b4a078;
+				}
+			}
+		}
+
+		.rec_con>div{//****************内容
+			background-color: #fff;
+			overflow: hidden;
+			width: 223px;
+			height: 280px;
+			float: left;
+			margin-left: 10px;
+			text-align: center;
+
+			.hd{//**********************图片
+				position: relative;
+				margin-bottom: 8px;
+				overflow: hidden;
+				border-bottom: 1px solid #F4F0EA;
+
+				div{
+					width: 100%;
+					height: 100%;
+
+					img{
+						width: 180px;
+						height: 180px;
+					}
+				}
+			}
+
+			.bd{//*********************内容
+
+				.prdtTags{
+					margin-bottom: 10px;
+
+					span{
+						height: 20px;
+						line-height: 20px;
+						color: #fff!important;
+						padding: 0 5px;
+						background-color: #e36844;
+						display: inline-block;
+						font-size: 12px;
+					}
+				}
+
+				.name{
+					width: 136px;
+   		 		margin: 0 auto 4px;
+
+					span{
+						line-height: 20px;
+					}
+				}
+
+				.price{
+					font-size: 13px;
+					line-height: 13px;
+					color: #d4282d;
+					padding: 1px 0 9px;
+					margin: 0;
+
+					.retailPrice{
+						line-height: 13px;
+						height: 13px;
+					}
+
+					.counterPrice{
+						line-height: 13px;
+						height: 13px;
+						font-size: 12px;
+						color: #999;
+						text-decoration: line-through;
+					}
+				}
+			}
+		}
+
+		div:nth-of-type(5),
+		div:nth-of-type(6),
+		div:nth-of-type(7){
+			margin-top: 10px;
+		}
+
+		.rec_con>.rec_con_one{//***大图
+			width: 390px;
+			height: 570px;
+			margin-left: 0;
+
+			.hd img{
+				width: 320px;
+				height: 320px;
+				margin: 40px 35px;
+			}
+
+			.bd{
+
+				.name{
+					line-height: 26px;
+					max-height: 52px;
+					margin: 0 auto 13px;
+					font-size: 18px;
+					width: 248px;
+				}
+
+				.price{
+					font-size: 18px;
+					line-height: 18px;
+					padding: 1px 0 9px;
+
+					.retailPrice{
+						font-size: 18px;
+						height: 18px;
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.flashSale{
+	height: 535px;
+}
+
+.welfare{
+	height: 526px;
+}
+
+.left{
+	height: 500px;
+}
+
+.advise{
+	height: 428px;
+}
+
+.weSaid{
+	height: 660px;
+}
+
+.footer{
+	height: 549px;
+}
