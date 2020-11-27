@@ -21,7 +21,7 @@ $(()=>{
     type: 'get',
     success: function(json){
       var urlCode = location.search.split('?').join('').split('=')[1];
-      console.log(json);
+      // console.log(json);
       $.each(json, function (i, e) {
         if ( urlCode === e.code ) {
           var $name = $(`
@@ -58,8 +58,7 @@ $(()=>{
     if(arr.length > 0){
         $.each($(arr),function(i,ele){
             if(ele.code === code){
-              console.log(ele.num)
-                ele.num = Number(ele.num) + Number($('.result').val());
+              ele.num = Number(ele.num) + Number($('.result').val());
             }
         })
     }
@@ -68,9 +67,11 @@ $(()=>{
         if(ele.code === code){
             flag = false;
         }
+        
     })
     flag && arr.push({code: code,num: $('.result').val()});
     localStorage.setItem('shop',JSON.stringify(arr));
+    shopNum();//购物车数量
 })
 
 

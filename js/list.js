@@ -3,7 +3,6 @@ $(()=>{
     url: '../data/list-jjsh.json',
     type: 'get',
     success: function(json){
-      console.log(json);
       $.each(json, function (i, e) {
         var $div = $(`
           <li class="item">

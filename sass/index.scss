@@ -134,108 +134,117 @@
   .new_con {
     //**************内容
 
-    div {
+    >div {
       position: relative;
 
       .new_list {
+				width: 1090px;
+				height: 344px;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
 
-        ul {
-          width: 8000px;
-          position: relative;
-          top: 0;
-          left: 0;
-          display: block;
+				>div{
+					width: 1090px;
+					height: 344px;
+					overflow-x: hidden;
 
-          li {
-            width: 265px;
-            margin-right: 10px;
-            float: left;
-            height: 100%;
-            min-height: 1px;
-
-
-
-            .hd {
-              //***************图片
-              position: relative;
-              margin-bottom: 8px;
-              overflow: hidden;
-
-              a {
-                display: block;
-
-                div:nth-of-type(2) {
-                  //隐藏图
-                  display: none;
-                }
-              }
-            }
-
-            .bd {
-              text-align: center;
-
-              .prdtTags {
-                height: 20px;
-                font-size: 0;
-                color: #fff;
-                width: 200px;
-                margin: 0 auto 3px;
-                overflow: hidden;
-
-                span {
-                  height: 20px;
-                  line-height: 20px;
-                  font-size: 12px;
-                  display: inline-block;
-                  color: #fff !important;
-                  padding: 0 5px;
-                  background-color: #e36844;
-                }
-              }
-
-              .name {
-                //**********描述
-                width: 166px;
-                margin: 0 auto 4px;
-                max-height: 40px;
-                line-height: 20px;
-                // display: -webkit-box;
-                overflow: hidden;
-                text-align: center;
-
-                a {
-                  text-align: center;
-                }
-              }
-
-              .price {
-                //**********价格
-                font-size: 13px;
-                line-height: 13px;
-                color: #d4282d;
-                padding: 1px 0 9px;
-                margin: 0;
-                padding: 1px 0 9px;
-
-                .counterPrice {
-                  font-size: 12px;
-                  color: #999;
-                  text-decoration: line-through;
-                }
-              }
-            }
-          }
-
-          li:hover .hd a div:nth-of-type(1) {
-            display: none;
-          }
-
-          li:hover .hd a div:nth-of-type(2) {
-            display: block;
-          }
-        }
+					ul {
+						width: 3300px;
+						height: 329px;
+						position: relative;
+						top: 0;
+						left: 0;
+						display: block;
+	
+						li {
+							width: 265px;
+							margin-right: 10px;
+							float: left;
+							height: 100%;
+							min-height: 1px;
+	
+	
+	
+							.hd {
+								//***************图片
+								position: relative;
+								margin-bottom: 8px;
+								overflow: hidden;
+	
+								a {
+									display: block;
+	
+									div:nth-of-type(2) {
+										//隐藏图
+										display: none;
+									}
+								}
+							}
+	
+							.bd {
+								text-align: center;
+	
+								.prdtTags {
+									height: 20px;
+									font-size: 0;
+									color: #fff;
+									width: 200px;
+									margin: 0 auto 3px;
+									overflow: hidden;
+	
+									span {
+										height: 20px;
+										line-height: 20px;
+										font-size: 12px;
+										display: inline-block;
+										color: #fff !important;
+										padding: 0 5px;
+										background-color: #e36844;
+									}
+								}
+	
+								.name {
+									//**********描述
+									width: 166px;
+									margin: 0 auto 4px;
+									max-height: 40px;
+									line-height: 20px;
+									// display: -webkit-box;
+									overflow: hidden;
+									text-align: center;
+	
+									a {
+										text-align: center;
+									}
+								}
+	
+								.price {
+									//**********价格
+									font-size: 13px;
+									line-height: 13px;
+									color: #d4282d;
+									padding: 1px 0 9px;
+									margin: 0;
+									padding: 1px 0 9px;
+	
+									.counterPrice {
+										font-size: 12px;
+										color: #999;
+										text-decoration: line-through;
+									}
+								}
+							}
+						}
+	
+						li:hover .hd a div:nth-of-type(1) {
+							display: none;
+						}
+	
+						li:hover .hd a div:nth-of-type(2) {
+							display: block;
+						}
+					}
+				}
       }
 
       button {
