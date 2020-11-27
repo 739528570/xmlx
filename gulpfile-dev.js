@@ -8,9 +8,16 @@ task('delDist', async ()=>{
   await del('./dist')
 })
 
+// 处理数据
+task('data', async ()=>{
+  src('./data/*.json')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
+
 // 处理图片
 task('img', async ()=>{
-  src('./img/*.*')
+  src('./img/**/*.*')
   .pipe(dest('./dist/img'))
   .pipe(load.connect.reload())
 })
@@ -40,6 +47,7 @@ task('sass', async ()=>{
 
 // 监听文件变化
 task('watch', async ()=>{
+  watch('./data/*.json',series('data'))
   watch('./pages/*.html',series('html'))
   watch('./sass/*.scss',series('sass'))
   watch('./img/*.*',series('img'))
@@ -55,4 +63,4 @@ task('connect', async ()=>{
   })
 })
 
-task('dev', series('delDist','img','html','script','sass','connect','watch'))
+task('dev', series('data','delDist','img','html','script','sass','connect','watch'))

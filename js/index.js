@@ -137,7 +137,7 @@ $(() => {
   })
 
   //侧边栏吸顶
-  var sidbarT = $(".new_top").offset() || $(".goodsArea").offset();
+  var sidbarT = $(".new_top").offset() || $(".goodsArea").offset() || $(".content").offset();
   $(document).on('scroll',function(){
     if ( $(document).scrollTop() >= sidbarT.top ) {
       $(".sidebar").css({

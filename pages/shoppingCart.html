@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>网易严选商品详情情情情情情情情情情情情</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/goods.css">
-    <script src="./js/common.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/goods.js"></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>网易严选商品品品品品品品品品</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/shoppingCart.css">
+  <script src="./js/common.js"></script>
+  <script src="./js/jquery.js"></script>
+  <!-- <script src="./js/index.js"></script> -->
+  <script src="./js/shoppingCart.js"></script>
+</head>
 <body>
   <div class="header">
     <div class="top_navBox">
@@ -53,7 +54,7 @@
       <div class="main_nav">
         <h1 class="logo"><a href="./index.html">网翼严选</a></h1>
         <div class="shop">
-          <a href="./shoppingCart.html">
+          <a href="">
             <em></em>
             <span>购物车</span>
             <i>0</i>
@@ -1511,456 +1512,139 @@
   </div>
   <div class="main">
     <div class="wrap">
-      <div class="crumb">
-        <span>
-          <span class="crumb_name">首页</span>
-          <i>></i>
-        </span>
-        <span>
-          <a class="crumb_url" href="">居家生活</a>
-          <i>></i>
-        </span>
-        <span>
-          <a class="crumb_url" href="">客餐厅家具</a>
-          <i>></i>
-        </span>
-        <span>
-          <span class="crumbName">多功能私享按摩椅</span>
-        </span>
-      </div>
-      <div class="content clearfix">
-        <div class="c_hd clearfix">
-          <div class="c_hd_l">
-            <div class="picsWrap">
-              <div class="smallPic">
-                <img src="./img/goods-FDJ-3.webp" alt="">
-                <div class="magnifierIco"></div>
-                <div class="mark"></div>
+      <div class="cartGetCoupons">
+        <div class="hd">
+          <div class="title">
+            <i></i>
+            <span>购物车可领优惠券</span>
+          </div>
+          <div class="rightBtn">
+            <span>领卷</span>
+            <i>∨</i>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="bd_left">
+            <ul>
+              <li class="item1 active"><a href="">可领取</a></li>
+              <li class="item2"><a href="">已领取</a></li>
+            </ul>
+          </div>
+          <div class="bd_right">
+            <div class="part">
+              <div class="partLeft">
+                <p class="name">每满200减25</p>
+                <p class="validity">2020.12.01-2020.12.01</p>
               </div>
-              <div class="bigPic"></div>
-            </div>
-            <div class="list">
-              <ul>
-                <li><a href=""><img src="./img/goods-FDJ-1.webp" alt=""></a></li>
-                <li><a href=""><img src="./img/goods-FDJ-2.webp" alt=""></a></li>
-                <li><a class="active" href=""><img src="./img/goods-FDJ-3.webp" alt=""></a></li>
-                <li><a href=""><img src="./img/goods-FDJ-4.webp" alt=""></a></li>
-                <li><a href=""><img src="./img/goods-FDJ-5.webp" alt=""></a></li>
-              </ul>
-            </div>
-            <div class="entrance">
-              <a href="">企业采购更优惠 ></a>
+              <div class="partBtn">
+                <a href="">立即领取</a>
+              </div>
             </div>
           </div>
-          <div class="c_hd_r">
-            <div class="intro">
-              <!-- <div class="name">
-                <span>多功能私享按摩椅</span>
-                <a href="">
-                  <span>98.5%</span>
-                  <br>
-                  <span>好评率 ></span>
-                </a>
-              </div> -->
-              <!-- <div class="desc">选款师力荐 专属私人按摩师</div> -->
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart_body">
+          <div class="hd">
+            <input class="all" type="checkbox">
+            <span class="t1">全选</span>
+            <span class="t2">商品信息</span>
+            <span class="t3">单价</span>
+            <span class="t4">数量</span>
+            <span class="t5">小计</span>
+            <span class="t6">操作</span>
+          </div>
+          <div class="bd">
+            <div class="cart_group_1">
+              <span class="t1">全场换购</span>
+              <span class="t2">再购130元享7.9元起超值换购</span>
+              <a class="t3" href="">查看换购</a>
+              <a class="t4" href="">继续凑单>></a>
             </div>
-            <div class="price">
-              <div class="p_item1">
-                <div>
-                  <span class="label">价格</span>
-                  <span class="rb">
-                    <span class="rmb">￥</span>
-                    <!-- <span class="num">2999</span> -->
-                  </span>
+            <div class="cart_group_2 clearfix">
+              <!-- <div class="cart_item clearfix">
+                <div class="item1">
+                  <input type="checkbox">
                 </div>
-              </div>
-              <div class="p_item2">
-                <div class="canClick">
-                  <span class="discount">Pro专享</span>
-                  <span class="leftText">Pro会员叠加优惠，到手价</span>
-                  <span class="spmcPrice">2184.05</span>
-                  <i class="GTH"></i>
-                </div>
-                <div class="rightText">立即开通 ></div>
-              </div>
-              <div class="p_item3">
-                <span class="label">促销</span>
-                <div class="saleLine">
-                  <a href="">
-                    <span class="itemTag">全场换购</span>
-                    <span>低至3折超值换购</span>
-                  </a>
-                </div>
-              </div>
-              <div class="p_item4">
-                <span class="label">购物返</span>
-                <div class="right">
-                  <span>最高返</span>
-                  <span class="red">229积分</span>
-                  <i class="questionMark"></i>
-                </div>
-              </div>
-              <div class="p_item5">
-                <span class="label">限制</span>
-                <span>该商品不可使用优惠券</span>
-              </div>
-              <div class="p_item6">
-                <span class="label">邮费</span>
-                <a href="">满99元免邮</a>
-              </div>
-              <div class="p_item7">
-                <span class="label">配送</span>
-                <div>
-                  <span>至&nbsp;</span>
-                  <div class="addressName">
-                    <span>请选择地址</span>
-                    <span>∨</span>
+                <div class="item2">
+                  <div class="pic">
+                    <a href=""><img src="./img/list-1.webp" alt=""></a>
+                  </div>
+                  <div class="nameCon">
+                    <a href="">多功能私享按摩椅</a>
+                    <div class="spec">
+                      <span>白色+咖啡色<i>∨</i></span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="p_item8">
-                <span class="label">服务</span>
-                <div>
-                  <a href="">
-                    <span>･ 网易自营品牌</span>
-                    <span>･ 免费配送到家 </span>
-                    <span>･ 30天无忧退换</span>
-                    <span>･ 不可用券/红包</span>
-                    <span>･ 不享受企业折扣</span>
-                    <span>･ 不享受学生折扣</span>
-                    <span>･ 国内部分地区不可配送</span>
-                  </a>
+                <div class="item3">
+                  <p class="price">
+                    <span>￥</span><span>19999</span>
+                  </p>
+                  <p class="preselldesc">预计11月27日发货</p>
                 </div>
-              </div>
-              <div class="p_item9">
-                <span class="label">备注</span>
-                <a href="">大家具送货安装及售后服务细则>></a>
-              </div>
-            </div>
-            <div class="shops">
-              <div class="specProp">
-                <span class="label">颜色</span>
-                <div class="cont">
-                  <ul class="tabs">
-                    <li>
-                      <a href=""><img src="./img/goods-FDJ-4.webp" alt=""></a>
-                    </li>
-                  </ul>
+                <div class="item4">
+                  <div class="num">
+                    <span class="less">-</span>
+                    <input class="inp" type="text" value="1">
+                    <span class="add">+</span>
+                  </div>
+                  <div class="nervous">
+                    <span>仅剩</span>
+                    <span>3</span>
+                    <span>件</span>
+                  </div>
                 </div>
-              </div>
-              <div class="number">
-                <span class="label">数量</span>
-                <div class="selnum ">
-                  <span class="less">-</span>
-                  <input class="result" type="text" value="1">
-                  <span class="more">+</span>
+                <div class="item5">
+                  <span class="sprice">￥19999</span>
                 </div>
-              </div>
-            </div>
-            <div class="btns">
-              <a href="">立即购买</a>
-              <a class="addShop" href="javascript:;">
-                <i></i>
-                <span>加入购物车</span>
-              </a>
-              <div>
-                <i></i>
-                <br>
-                <span>收藏</span>
-              </div>
+                <div class="item6">
+                  <div class="operate">
+                    <a href="">移入收藏夹</a>
+                  </div>
+                  <div class="operate">
+                    <a class="del" href="">删除</a>
+                  </div>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="lbt"></div>
-        <div class="c_bd">
-          <div class="left">
-            <div class="detailNavTab">
-              <ul>
-                <li class="active"><span>详情</span></li>
-                <li><span>
-                  <span>评论</span>
-                  <span>
-                    <em>(</em><span>8927</span><em>)</em>
-                  </span>
-                </span></li>
-                <li><span>质检报告</span></li>
-                <li><span>常见问题</span></li>
-              </ul>
-            </div>
-            <div class="tabContent">
-              <ul class="attrList clearfix">
-                <li class="item1">
-                  <span class="left">
-                    <span class="label">安装方式</span>
-                    <span class="ms">不需要安装</span>
-                  </span>
-                  <span class="right">
-                    <span class="label">主体材质</span>
-                    <span class="ms">铁架/塑料/海绵/PU</span>
-                  </span>
-                </li>
-                <li class="item2">
-                  <span class="label">面料材质</span>
-                  <span class="ms">PU</span>
-                </li>
-                <li class="item3">
-                  <span class="label">尺寸</span>
-                  <span class="ms">930*620*870mm；电源线长度2m</span>
-                </li>
-                <li class="item4">
-                <li class="item1">
-                  <span class="left">
-                    <span class="label">坐宽</span>
-                    <span class="ms">最大：43cm 最小：34cm</span>
-                  </span>
-                  <span class="right">
-                    <span class="label">背宽</span>
-                    <span class="ms">34cm</span>
-                  </span>
-                </li>
-                <li class="item5">
-                <li class="item1">
-                  <span class="left">
-                    <span class="label">颜色</span>
-                    <span class="ms">咖色+奶白色</span>
-                  </span>
-                  <span class="right">
-                    <span class="label">毛重；净重</span>
-                    <span class="ms">36KG；30KG</span>
-                  </span>
-                </li>
-                <li class="item6">
-                  <span class="label">*特别提醒</span><br>
-                  <p>1、程序设定中臀部按摩有气囊左右不同步放气以达到扭臀按摩效果，非质量问题，请知悉！</p>
-                  <p>2、加热键在选好按摩模式（上半身、下半身、全身）后自动启动，进行移动加热；直接单独按加热键不可用，避免定点加热，非质量问题，请知悉！</p>
-                  <p>3、选好模式、以及功能（加热、臀部力度）后，一个按摩流程为20min；如期间进行了其它按键操作，将重新开始计时20min，请知悉！</p>
-                  <p>4、收到家具若有磕碰或质量问题等，请一定当场拒收或异常签收；有退换货可能的，请一定保留原包装！</p>
-                </li>
-                <li class="item7">
-                  <span class="label">*发货提醒</span><br>
-                  <p>1，大家具属贵重商品，收到商品后请务必检查确认没有问题再签收，商品破损请直接拒收并反馈客服；</p>
-                  <p>2，退换货需保证商品、配件、包装等完好，不影响二次销售；非质量问题退货需承担退货费用；</p>
-                </li>
-                <li class="item8">
-                  <span class="label">*温馨提示</span>
-                  <span class="ms">该商品并非专业医用器械，请高血压，心脑血管，和其他疾病患者慎用。</span>
-                </li>
-              </ul>
-              <div class="match">
-                <p><img src="./img/goods-content1.jpg" alt=""></p>
-                <p><img src="./img/goods-content2.jpg" alt=""></p>
-                <p><img src="./img/goods-content3.jpg" alt=""></p>
-                <p><img src="./img/goods-content4.jpg" alt=""></p>
-                <p><img src="./img/goods-content5.jpg" alt=""></p>
-              </div>
-              <div class="details">
-                <p><img src="./img/goods-1.webp" alt=""></p>
-                <p><img src="./img/goods-2.webp" alt=""></p>
-                <p><img src="./img/goods-3.webp" alt=""></p>
-                <p><img src="./img/goods-4.webp" alt=""></p>
-                <p><img src="./img/goods-5.webp" alt=""></p>
-              </div>
-            </div>
+        <div class="cart_total clearfix">
+          <div class="total_left">
+            <input class="all" type="checkbox">
+            <span class="all_text">
+              <span>全部</span>
+              <span></span>
+            </span>
+            <a href="">批量删除</a>
+            <a href="">清空失效商品</a>
           </div>
-          <div class="right">
-            <div class="hotSell">
-              <div class="hd">24小时热销榜</div>
-              <div class="bd">
-                <ul>
-                  <li class="item">
-                    <div class="imgWrap">
-                      <a class="img" href=""><img src="./img/goods-subBanner1.webp" alt=""></a>
-                      <div class="promBanner">
-                        <div class="promTitle">
-                          <div class="title">限时购</div>
-                          <div class="subTitle">
-                            <span>￥199</span><span>起</span>
-                          </div>
-                        </div>
-                        <div class="promContent">限300件 仅剩1小时</div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <a class="name" href=""><p>享自由裸睡，天竺棉全棉针织拼色四件套</p></a>
-                      <div class="price">
-                        <span>￥</span>
-                        <span>199</span>
-                        <span class="counterPrice">
-                          <span>￥</span><span>1999</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="imgWrap">
-                      <a class="img" href=""><img src="./img/goods-subBanner1.webp" alt=""></a>
-                      <div class="promBanner">
-                        <div class="promTitle">
-                          <div class="title">限时购</div>
-                          <div class="subTitle">
-                            <span>￥199</span><span>起</span>
-                          </div>
-                        </div>
-                        <div class="promContent">限300件 仅剩1小时</div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <a class="name" href=""><p>享自由裸睡，天竺棉全棉针织拼色四件套</p></a>
-                      <div class="price">
-                        <span>￥</span>
-                        <span>199</span>
-                        <span class="counterPrice">
-                          <span>￥</span><span>1999</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="imgWrap">
-                      <a class="img" href=""><img src="./img/goods-subBanner1.webp" alt=""></a>
-                      <div class="promBanner">
-                        <div class="promTitle">
-                          <div class="title">限时购</div>
-                          <div class="subTitle">
-                            <span>￥199</span><span>起</span>
-                          </div>
-                        </div>
-                        <div class="promContent">限300件 仅剩1小时</div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <a class="name" href=""><p>享自由裸睡，天竺棉全棉针织拼色四件套</p></a>
-                      <div class="price">
-                        <span>￥</span>
-                        <span>199</span>
-                        <span class="counterPrice">
-                          <span>￥</span><span>1999</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="imgWrap">
-                      <a class="img" href=""><img src="./img/goods-subBanner1.webp" alt=""></a>
-                      <div class="promBanner">
-                        <div class="promTitle">
-                          <div class="title">限时购</div>
-                          <div class="subTitle">
-                            <span>￥199</span><span>起</span>
-                          </div>
-                        </div>
-                        <div class="promContent">限300件 仅剩1小时</div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <a class="name" href=""><p>享自由裸睡，天竺棉全棉针织拼色四件套</p></a>
-                      <div class="price">
-                        <span>￥</span>
-                        <span>199</span>
-                        <span class="counterPrice">
-                          <span>￥</span><span>1999</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="imgWrap">
-                      <a class="img" href=""><img src="./img/goods-subBanner1.webp" alt=""></a>
-                      <div class="promBanner">
-                        <div class="promTitle">
-                          <div class="title">限时购</div>
-                          <div class="subTitle">
-                            <span>￥199</span><span>起</span>
-                          </div>
-                        </div>
-                        <div class="promContent">限300件 仅剩1小时</div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <a class="name" href=""><p>享自由裸睡，天竺棉全棉针织拼色四件套</p></a>
-                      <div class="price">
-                        <span>￥</span>
-                        <span>199</span>
-                        <span class="counterPrice">
-                          <span>￥</span><span>1999</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item">
-                    <div class="imgWrap">
-                      <a class="img" href=""><img src="./img/goods-subBanner1.webp" alt=""></a>
-                      <div class="promBanner">
-                        <div class="promTitle">
-                          <div class="title">限时购</div>
-                          <div class="subTitle">
-                            <span>￥199</span><span>起</span>
-                          </div>
-                        </div>
-                        <div class="promContent">限300件 仅剩1小时</div>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <a class="name" href=""><p>享自由裸睡，天竺棉全棉针织拼色四件套</p></a>
-                      <div class="price">
-                        <span>￥</span>
-                        <span>199</span>
-                        <span class="counterPrice">
-                          <span>￥</span><span>1999</span>
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+          <div class="total_right">
+            <button class="active">下单</button>
+          </div>
+          <div class="total_center">
+            <div class="pay">
+              <p class="shouldPayMoney">
+                <span>应付金额：</span>
+                <span class="priceNum">
+                  <span>￥</span><span>29999</span>
+                </span>
+              </p>
+              <a class="line">已满足免邮条件</a>
             </div>
-            <div class="topicRecommendedList">
-              <div class="hd">专题推荐</div>
-              <div class="bd">
-                <ul>
-                  <li class="item">
-                    <a href="">
-                      <img src="../img/goods-subBanner3.webp" alt="">
-                      <p class="text">这个黑科技，满足了我对充电宝所有的需求</p>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <img src="../img/goods-subBanner3.webp" alt="">
-                      <p class="text">这个黑科技，满足了我对充电宝所有的需求</p>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <img src="../img/goods-subBanner3.webp" alt="">
-                      <p class="text">这个黑科技，满足了我对充电宝所有的需求</p>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <img src="../img/goods-subBanner3.webp" alt="">
-                      <p class="text">这个黑科技，满足了我对充电宝所有的需求</p>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <img src="../img/goods-subBanner3.webp" alt="">
-                      <p class="text">这个黑科技，满足了我对充电宝所有的需求</p>
-                    </a>
-                  </li>
-                  <li class="item">
-                    <a href="">
-                      <img src="../img/goods-subBanner3.webp" alt="">
-                      <p class="text">这个黑科技，满足了我对充电宝所有的需求</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div class="result">
+              <p>
+                <span>商品合计 : </span><span>¥2548.00</span>
+              </p>
+              <p>
+                <span>已优惠 : </span><span>¥0.00</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <div class="lbt"></div>
     </div>
   </div>
   <div class="footer">
@@ -2178,4 +1862,5 @@
     </div>
   </div>
 </body>
+
 </html>
